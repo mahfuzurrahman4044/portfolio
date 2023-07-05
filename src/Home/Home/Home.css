@@ -1,0 +1,32 @@
+.home-img img {
+  border: 1px solid plum;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  width: 400px;
+  height: 450px;
+}
+
+.banner-text {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 450px) {
+  .home-img img {
+    width: 180px;
+    height: 200px;
+  }
+  .hi {
+    /* font-size: xx-large; */
+    position: relative;
+    top: 20px;
+  }
+  .position {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 80px;
+    text-align: center;
+  }
+  .banner-text {
+    text-align: justify;
+  }
+}

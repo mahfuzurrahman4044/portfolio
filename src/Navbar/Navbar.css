@@ -1,0 +1,14 @@
+.svg-icon {
+  position: relative;
+  bottom: 170px;
+}
+
+.svg {
+  position: relative;
+  bottom: 0px;
+}
+
+.img-logo img {
+  width: 250px;
+  height: 50px;
+}
