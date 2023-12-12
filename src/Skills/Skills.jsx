@@ -2,11 +2,11 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import "./Skills.css";
 import skill1 from "../assets/Skills/HTML5_logo_and_wordmark.svg.png";
 import skill2 from "../assets/Skills/CSS3_logo_and_wordmark.svg.png";
-import skill3 from "../assets/Skills/Bootstrap_logo.svg.png";
+import skill3 from "../assets/Skills/bootstrap-logo.png";
 import skill4 from "../assets/Skills/download.png";
-import skill5 from "../assets/Skills/JavaScript-Logo.png";
+import skill5 from "../assets/Skills/JavaScript-logo (1).png";
 import skill6 from "../assets/Skills/16407404782_8b9c57eab3_w.jpg";
-import skill7 from "../assets/Skills/dom_img_46f7da9a93.png";
+import skill7 from "../assets/Skills/nextjs-icon-2048x1234-pqycciiu.png";
 import skill8 from "../assets/Skills/React-icon.svg.png";
 import skill9 from "../assets/Skills/firebase_logo.webp";
 import skill10 from "../assets/Skills/2560px-Node.js_logo.svg.png";
@@ -32,7 +32,11 @@ const Skills = () => {
         className="grid justify-center lg:grid-cols-4 gap-10 my-10 lg:ps-20"
         data-aos="fade-up"
       >
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill1} alt="" />
@@ -43,7 +47,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill2} alt="" />
@@ -54,7 +62,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill3} alt="" />
@@ -65,7 +77,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill4} alt="" />
@@ -76,7 +92,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill5} alt="" />
@@ -87,29 +107,26 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill6} alt="" />
             </div>
             <div className="">
               <h2 className="card-title">ES6</h2>
-              <p>Expert</p>
-            </div>
-          </div>
-        </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
-          <div className="flex justify-center items-center gap-4">
-            <div className="card-img">
-              <img src={skill7} alt="" />
-            </div>
-            <div className="">
-              <h2 className="card-title">DOM</h2>
               <p>Intermediate</p>
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill8} alt="" />
@@ -120,7 +137,26 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
+          <div className="flex justify-center items-center gap-4">
+            <div className="card-img">
+              <img src={skill7} alt="" />
+            </div>
+            <div className="">
+              <h2 className="card-title">Next</h2>
+              <p>Basic</p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill9} alt="" />
@@ -131,7 +167,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill10} alt="" />
@@ -142,7 +182,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill11} alt="" />
@@ -153,7 +197,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill12} alt="" />
@@ -164,7 +212,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill16} alt="" />
@@ -175,7 +227,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill13} alt="" />
@@ -186,7 +242,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill14} alt="" />
@@ -197,7 +257,11 @@ const Skills = () => {
             </div>
           </div>
         </div>
-        <div className="card w-60 bg-base-100 shadow-lg border border-1 border-gray-400">
+        <div
+          className="card w-60 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
               <img src={skill15} alt="" />

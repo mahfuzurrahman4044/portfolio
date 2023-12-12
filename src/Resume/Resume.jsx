@@ -1,6 +1,6 @@
 const Resume = () => {
   const resumeLink =
-    "https://drive.google.com/file/d/1DS-7URExF99Ov_HHMuoL5subrIWF7iVq/view?usp=drive_link"; // Replace with the direct link to your resume file
+    "https://drive.google.com/file/d/1x0vU8StT-qR5SKh3SMuQjP_KgZS-B3CO/view?usp=sharing";
 
   const handleDownload = () => {
     window.open(resumeLink);

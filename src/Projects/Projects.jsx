@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "./Projects.css";
-import img1 from "../assets/Projects/Screenshot (15).png";
-import img2 from "../assets/Projects/Screenshot (16).png";
-import img3 from "../assets/Projects/Screenshot (20).png";
+import img1 from "../assets/Projects/Screenshot (47).png";
+import img2 from "../assets/Projects/Screenshot (49).png";
+import img3 from "../assets/Projects/Screenshot (50).png";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 import Aos from "aos";
@@ -16,8 +16,8 @@ const Projects = () => {
   return (
     <div className="mt-20" id="projects">
       <SectionTitle title={"Projects"}></SectionTitle>
-      <div className="grid lg:grid-cols-3 lg:ps-24" data-aos="flip-right">
-        <div className="card lg:w-96 bg-base-100 shadow-xl">
+      <div className="grid lg:grid-cols-3 lg:ps-24">
+        <div data-aos="flip-left" data-aos-duration="2000" className="card lg:w-96 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-xl">
           <figure className="px-10 pt-10 project-img">
             <img src={img1} alt="Shoes" className="rounded-xl" />
           </figure>
@@ -35,7 +35,10 @@ const Projects = () => {
                 id="my_modal_5"
                 className="modal modal-bottom sm:modal-middle"
               >
-                <form method="dialog" className="modal-box">
+                <form
+                  method="dialog"
+                  className="modal-box bg-gradient-to-r from-blue-600 to-cyan-400"
+                >
                   <figure className="px-5 pt-5 modal-img">
                     <img src={img1} alt="Shoes" className="rounded-xl" />
                   </figure>
@@ -44,10 +47,10 @@ const Projects = () => {
                     Features
                     <ul className="" style={{ listStyleType: "disc" }}>
                       <li className="ms-10">
-                        Admin, Instructor and Student have different dashboards.
+                        Admin, Instructor and Student have different dashboards.{" "}
                       </li>
                       <li className="ms-10">
-                        Implemented JWT for extra security.
+                        Implemented JWT for extra security.{" "}
                       </li>
                       <li className="ms-10">Implemented a payment method.</li>
                     </ul>
@@ -56,14 +59,14 @@ const Projects = () => {
                     <div className="mt-5 lg:flex justify-center items-center">
                       <div>
                         <button className="btn btn-primary">
-                          <Link to="https://github.com/programming-hero-web-course1/b712-summer-camp-client-side-mahfuzurrahman4044">
+                          <Link to="https://github.com/mahfuzurrahman4044/Summer-Camp">
                             GitHub Client Site
                           </Link>
                         </button>{" "}
                       </div>
                       <div>
                         <button className="btn btn-primary my-3 lg:mx-3">
-                          <Link to="https://github.com/programming-hero-web-course1/b7a12-summer-camp-server_side-mahfuzurrahman4044">
+                          <Link to="https://github.com/mahfuzurrahman4044/Summer-Camp-API">
                             GitHub Server Site
                           </Link>
                         </button>{" "}
@@ -87,12 +90,12 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="card lg:w-96 bg-base-100 shadow-xl">
+        <div data-aos="flip-left" data-aos-duration="2000" className="card lg:w-96 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-xl">
           <figure className="px-10 pt-10 project-img">
             <img src={img2} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Kids Zone</h2>
+            <h2 className="card-title">Holizon Education Consultancy</h2>
             <div className="card-actions">
               {/* Open the modal using ID.showModal() method */}
               <button
@@ -105,20 +108,28 @@ const Projects = () => {
                 id="my_modal_6"
                 className="modal modal-bottom sm:modal-middle"
               >
-                <form method="dialog" className="modal-box">
+                <form
+                  method="dialog"
+                  className="modal-box bg-gradient-to-r from-blue-600 to-cyan-400"
+                >
                   <figure className="px-5 pt-5 modal-img">
                     <img src={img2} alt="Shoes" className="rounded-xl" />
                   </figure>
-                  <h3 className="font-bold text-lg mt-3">Kids Zone</h3>
+                  <h3 className="font-bold text-lg mt-3">
+                    Holizon Education Consultancy
+                  </h3>
                   <p className="py-4 text-left">
                     Features
                     <ul className="" style={{ listStyleType: "disc" }}>
                       <li className="ms-10">
-                        User can add toys and see the toys he added.
+                        Users can add classes and see the classes they have
+                        added.{" "}
                       </li>
-                      <li className="ms-10">Used Express to show data.</li>
                       <li className="ms-10">
-                        Used AOS for awesome UI and made the Homepage
+                        Used a private route for privacy.
+                      </li>
+                      <li className="ms-10">
+                        Used AOS for awesome UI and made the homepage
                         responsive.
                       </li>
                     </ul>
@@ -127,21 +138,21 @@ const Projects = () => {
                     <div className="mt-5 lg:flex justify-center items-center">
                       <div>
                         <button className="btn btn-primary">
-                          <Link to="https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-client-side-mahfuzurrahman4044">
+                          <Link to="https://github.com/mahfuzurrahman4044/college">
                             GitHub Client Site
                           </Link>
                         </button>{" "}
                       </div>
                       <div>
                         <button className="btn btn-primary my-3 lg:mx-3">
-                          <Link to="https://github.com/programming-hero-web-course-4/b7a11-toy-marketplace-server-side-mahfuzurrahman4044">
+                          <Link to="https://github.com/mahfuzurrahman4044/college-server">
                             GitHub Server Site
                           </Link>
                         </button>{" "}
                       </div>
                       <div>
                         <button className="btn btn-primary">
-                          <Link to="https://kids-zone-52dcf.web.app/">
+                          <Link to="https://college-bec54.web.app/">
                             Live Site
                           </Link>
                         </button>
@@ -158,12 +169,12 @@ const Projects = () => {
           </div>
         </div>
 
-        <div className="card lg:w-96 bg-base-100 shadow-xl">
+        <div data-aos="flip-left" data-aos-duration="2000" className="card lg:w-96 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-xl">
           <figure className="px-10 pt-10 project-img">
             <img src={img3} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Food Valley</h2>
+            <h2 className="card-title">Tea House</h2>
             <div className="card-actions">
               {/* Open the modal using ID.showModal() method */}
               <button
@@ -176,38 +187,40 @@ const Projects = () => {
                 id="my_modal_7"
                 className="modal modal-bottom sm:modal-middle"
               >
-                <form method="dialog" className="modal-box">
+                <form
+                  method="dialog"
+                  className="modal-box bg-gradient-to-r from-blue-600 to-cyan-400"
+                >
                   <figure className="px-5 pt-5 modal-img">
                     <img src={img3} alt="Shoes" className="rounded-xl" />
                   </figure>
-                  <h3 className="font-bold text-lg mt-3">Food Valley</h3>
+                  <h3 className="font-bold text-lg mt-3">Tea House</h3>
                   <p className="py-4 text-left">
                     Features
                     <ul className="" style={{ listStyleType: "disc" }}>
-                      <li className="ms-10">Dynamically fetched data.</li>
-                      <li className="ms-10">Used Express.</li>
-                      <li className="ms-10">Responsive Homepage</li>
+                      <li className="ms-10">Beautiful design.</li>
+                      <li className="ms-10">Used Bootstrap.</li>
+                      <li className="ms-10">Responsive design.</li>
                     </ul>
-                    Technologies: React | Node | Express | MongoDB | JWT |
-                    Firebase | Tailwind
+                    Technologies: HTML | CSS | Bootstrap
                     <div className="mt-5 lg:flex justify-center items-center">
                       <div>
                         <button className="btn btn-primary">
-                          <Link to="https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-client-side-mahfuzurrahman4044">
+                          <Link to="https://github.com/mahfuzurrahman4044/Web-Design">
                             GitHub Client Site
                           </Link>
                         </button>
                       </div>
-                      <div>
+                      {/* <div>
                         <button className="btn btn-primary my-3 lg:mx-3">
                           <Link to="https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-mahfuzurrahman4044">
                             GitHub Server Site
                           </Link>
                         </button>
-                      </div>
+                      </div> */}
                       <div>
-                        <button className="btn btn-primary">
-                          <Link to="https://food-valley-f5899.web.app/">
+                        <button className="btn btn-primary lg:mx-3">
+                          <Link to="https://kaleidoscopic-gnome-355bfd.netlify.app/">
                             Live Site
                           </Link>
                         </button>
