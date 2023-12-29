@@ -22,7 +22,7 @@ const Services = () => {
         <SectionTitle title={"Services"}></SectionTitle>
       </div>
       <div data-aos="zoom-in" data-aos-duration="3000">
-        <Carousel className="lg:mx-16 lg:ps-48 slideRes">
+        <Carousel className="lg:mx-16 lg:ps-48 slideRes lg:px-0 px-5">
           <div className="slider-img">
             <p className="lg:text-4xl mb-5 font-semibold">Web Design</p>
             <img className="rounded-md" src={img1} />

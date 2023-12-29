@@ -29,7 +29,7 @@ const Home = () => {
           <h2 className="">
             <span className="hi">Hi, I am</span> <br />
             <div className="py-6">
-              <span className="font-bold text-purple-800 lg:text-6xl">
+              <span className="font-bold text-purple-800 lg:text-6xl text-2xl">
                 Mahfuzur Rahman
               </span>
               <br />

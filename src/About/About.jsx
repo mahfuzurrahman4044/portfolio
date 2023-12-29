@@ -25,7 +25,7 @@ const About = () => {
           <img src={img2} alt="" />
         </div>
         <h2
-          className="lg:mx-40 w-1/4 about-text"
+          className="lg:mx-40 w-1/4 about-text lg:ps-0 ps-5"
           style={{ textAlign: "justify" }}
           data-aos="fade-left"
           data-aos-duration="3000"
