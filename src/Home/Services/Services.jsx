@@ -17,12 +17,12 @@ const Services = () => {
     Aos.init();
   }, []);
   return (
-    <div className="mt-5 container mb-10 " id="services">
-      <div className="lg:ps-48">
+    <div className=" container mb-10 " id="services">
+      <div className="lg:px-48 lg:mt-10">
         <SectionTitle title={"Services"}></SectionTitle>
       </div>
       <div data-aos="zoom-in" data-aos-duration="3000">
-        <Carousel className="lg:mx-16 lg:ps-48 slideRes lg:px-0 px-5">
+        <Carousel className="lg:mx-16 lg:px-52 px-5 slideRes">
           <div className="slider-img">
             <p className="lg:text-4xl mb-5 font-semibold">Web Design</p>
             <img className="rounded-md" src={img1} />

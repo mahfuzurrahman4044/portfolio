@@ -34,7 +34,7 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow from-blue-500 to-cyan-500 rounded-box w-52"
           >
             <li>
-              <a href="/#" className="">
+              <a href="/" className="">
                 Home
               </a>
             </li>
