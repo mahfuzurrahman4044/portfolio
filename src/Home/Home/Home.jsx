@@ -23,7 +23,7 @@ const Home = () => {
     window.open(resumeLink);
   };
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-cyan-500" id="home">
+    <div className="bg-gradient-to-r from-blue-500 to-cyan-500 pt-20 sm:pt-0" id="home">
       <div className="lg:flex justify-around items-center py-32 position" data-aos="zoom-in" data-aos-duration="3000">
         <div className="lg:text-4xl font-semibold w-1/2">
           <h2 className="">
