@@ -46,7 +46,7 @@ const Home = () => {
           </h3>
           <div className="">
             <button
-              className="font-bold btn btn-primary"
+              className="lg:font-bold font-normal btn btn-primary"
               onClick={handleDownload}
             >
               Download Resume
