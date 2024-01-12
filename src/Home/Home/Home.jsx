@@ -33,7 +33,7 @@ const Home = () => {
                 Mahfuzur Rahman
               </span>
               <br />
-              <span>MERN Stack Developer</span>
+              <span>Web Designer and Developer</span>
             </div>
           </h2>
           <h3 className="lg:text-2xl font-normal my-5 banner-text">
