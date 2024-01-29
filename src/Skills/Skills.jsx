@@ -29,7 +29,7 @@ const Skills = () => {
     <div className="" id="skills">
       <SectionTitle title={"Skills"}></SectionTitle>
       <div
-        className="grid justify-center lg:grid-cols-4 gap-10 my-10 lg:ps-20"
+        className="grid justify-center lg:grid-cols-4 gap-10 my-10 lg:ps-8"
         data-aos="fade-up"
       >
         <div

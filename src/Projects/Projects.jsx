@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import "./Projects.css";
-import img1 from "../assets/Projects/Add a little bit of body text (1).png";
+import img1 from "../assets/Projects/Summer Camp.png";
 import img2 from "../assets/Projects/Holizon Education Consultancy.png";
-import img3 from "../assets/Projects/Tea (4).png";
+import img3 from "../assets/Projects/Tea House.png";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 import Aos from "aos";
@@ -16,7 +16,7 @@ const Projects = () => {
   return (
     <div className="mt-20" id="projects">
       <SectionTitle title={"Projects"}></SectionTitle>
-      <div className="grid lg:grid-cols-3 lg:ps-24 lg:px-0 px-5">
+      <div className="grid lg:grid-cols-3 lg:ps-7 lg:px-0 px-5">
         <div data-aos="flip-left" data-aos-duration="2000" className="card lg:w-96 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-xl lg:my-0 my-5">
           <figure className="px-10 pt-10 project-img">
             <img src={img1} alt="Shoes" className="rounded-xl" />

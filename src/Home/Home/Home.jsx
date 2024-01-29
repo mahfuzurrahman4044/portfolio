@@ -25,18 +25,18 @@ const Home = () => {
   return (
     <div className="bg-gradient-to-r from-blue-500 to-cyan-500 pt-20 sm:pt-0" id="home">
       <div className="lg:flex justify-around items-center py-32 position" data-aos="zoom-in" data-aos-duration="3000">
-        <div className="lg:text-4xl font-semibold w-1/2">
+        <div className="lg:text-3xl font-semibold w-1/2">
           <h2 className="">
             <span className="hi">Hi, I am</span> <br />
             <div className="py-6">
-              <span className="font-bold text-purple-800 lg:text-6xl text-2xl">
+              <span className="font-bold text-purple-800 lg:text-5xl text-2xl">
                 Mahfuzur Rahman
               </span>
               <br />
               <span>Web Designer and Developer</span>
             </div>
           </h2>
-          <h3 className="lg:text-2xl font-normal my-5 banner-text">
+          <h3 className="lg:text-xl font-normal my-2 banner-text">
             Passionate and motivated in the field of web design and development,
             I am dedicated to creating visually appealing and user-friendly
             websites. With a strong focus on delivering high-quality solutions,
