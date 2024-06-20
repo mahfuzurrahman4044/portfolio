@@ -38,17 +38,20 @@ const Contact = () => {
   };
 
   return (
-    <div className="pb-8" id="contact">
+    <div className="py-16 bg-gray-900" id="contact">
       <SectionTitle title={"Contact"}></SectionTitle>
       <div data-aos="">
         <div className="hero min-h-screen">
           <div className="hero-content flex-col lg:flex-row-reverse">
             <div className="text-center lg:text-left"></div>
             <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl">
-              <form className="card-body" onSubmit={handleForm}>
+              <form
+                className="card-body bg-gradient-to-r from-green-400 to-cyan-300 rounded-lg font-serif"
+                onSubmit={handleForm}
+              >
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Name</span>
+                    <span className="label-text text-white">Name</span>
                   </label>
                   <input
                     type="text"
@@ -59,7 +62,7 @@ const Contact = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Email</span>
+                    <span className="label-text text-white">Email</span>
                   </label>
                   <input
                     type="email"
@@ -70,7 +73,7 @@ const Contact = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Subject</span>
+                    <span className="label-text text-white">Subject</span>
                   </label>
                   <input
                     type="text"
@@ -81,7 +84,7 @@ const Contact = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">Message</span>
+                    <span className="label-text text-white">Message</span>
                   </label>
                   <textarea
                     placeholder="message"
@@ -90,29 +93,12 @@ const Contact = () => {
                   ></textarea>
                 </div>
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary">Send</button>
+                  <button className="btn text-gradient">Send</button>
                 </div>
               </form>
             </div>
           </div>
         </div>
-      </div>
-
-      <div className="text-center">
-        <div className="divider">OR</div>
-        <button className="btn btn-primary">
-          <Link to="https://web.facebook.com/mr4044">Facebook</Link>
-        </button>{" "}
-        |{" "}
-        <button className="btn btn-primary">
-          <Link to="https://www.linkedin.com/in/mahfuzurrahman4044/">
-            LinkedIn
-          </Link>
-        </button>{" "}
-        |{" "}
-        <button className="btn btn-primary">
-          <Link to="https://github.com/mahfuzurrahman4044">GitHub</Link>
-        </button>
       </div>
     </div>
   );

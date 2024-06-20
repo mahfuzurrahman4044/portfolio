@@ -1,54 +1,64 @@
 import "./About.css";
-import img1 from "../assets/Photo/Photo1.jpg";
-import img2 from "../assets/Photo/istockphoto-1356364287-612x612.jpg";
 import SectionTitle from "../SectionTitle/SectionTitle";
+import image from "../assets/Photo/Photo.jpg";
+import { FaCloudDownloadAlt } from "react-icons/fa";
 
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
 const About = () => {
-  useEffect(() => {
-    Aos.init();
-  }, []);
+  const handleDownload = () => {
+    window.open(
+      "https://drive.google.com/file/d/1tYquE-fLFOJ_Ikrxvntpqd3cSwsb5-mq/view?usp=sharing"
+    );
+  };
   return (
-    <div className="" id="about">
-      <SectionTitle title={"About Me"}></SectionTitle>
-      <div className="about-img flex justify-center my-10">
-        <img className="" src={img1} alt="" />
-      </div>
-      <div className="lg:flex justify-center items-center">
-        <div
-          className="about-banner-img"
-          data-aos="fade-right"
-          data-aos-duration="3000"
-        >
-          <img src={img2} alt="" />
+    <div className="py-16 bg-gray-950" id="about">
+      <SectionTitle title={"About"}></SectionTitle>
+
+      <div className="flex justify-around items-center">
+        <div className="about-img">
+          <img src={image} alt="" />
+          <div className="pt-6 ps-12">
+            <button className="btn text-gradient" onClick={handleDownload}>
+              <FaCloudDownloadAlt className="text-white" /> Download Resume
+            </button>
+          </div>
         </div>
-        <h2
-          className="lg:mx-40 w-1/4 about-text lg:ps-0 ps-8"
-          style={{ textAlign: "justify" }}
-          data-aos="fade-left"
-          data-aos-duration="3000"
-        >
-          {" "}
-          As a passionate MERN Stack Developer, I have a strong foundation in
-          web development and a drive to create user-friendly applications.
-          Alongside my Political Science studies at the National University of
-          Bangladesh, I honed my skills in HTML, CSS, Bootstrap, Tailwind,
-          JavaScript, React, Node.js, Express, and MongoDB. I thrive on
-          challenges, turning ideas into reality through code. With a meticulous
-          problem-solving approach, I deliver high-quality solutions that exceed
-          expectations. My attention to detail ensures efficient project
-          completion. I am adaptable to new technologies, with a knack for
-          collaborative work. I continuously seek growth, staying up-to-date
-          with the latest industry trends. Beyond my technical skills, I am
-          known for a strong work ethic and punctuality. I believe in open
-          communication and enjoy a team environment where innovation thrives.
-          My goal is to make a positive impact through my work, enhancing user
-          experiences and making a difference in peoples lives. If you need a
-          dedicated MERN Stack Developer, I would be thrilled to collaborate and
-          bring ideas to life!
-        </h2>
+
+        <div className="w-1/2 text-white font-serif">
+          <p>
+            Motivated Web Developer with expertise in MERN Stack Development.
+            Dedicated to delivering exceptional user experiences and eager to
+            contribute to a dynamic company's success by utilising my skills,
+            organisation, and passion for continuous learning.
+          </p>
+          <h2 className="pt-4 text-xl">
+            <span className="uppercase text-gradient font-bold">NAME:</span>{" "}
+            Mahfuzur Rahman
+          </h2>
+          <h2 className="pt-4 text-xl">
+            <span className="uppercase text-gradient font-bold">
+              DATE OF BIRTH:
+            </span>{" "}
+            June-4, 2001
+          </h2>
+          <h2 className="pt-4 text-xl">
+            <span className="uppercase text-gradient font-bold">
+              Nationality
+            </span>{" "}
+            Bangladeshi
+          </h2>
+          <h2 className="pt-4 text-xl">
+            <span className="uppercase text-gradient font-bold">Address:</span>{" "}
+            Rajshahi, Bangladesh
+          </h2>
+          <h2 className="pt-4 text-xl">
+            <span className="uppercase text-gradient font-bold">Phone:</span>{" "}
+            +880 1315589668
+          </h2>
+          <h2 className="pt-4 text-xl">
+            <span className="uppercase text-gradient font-bold">Email:</span>{" "}
+            mahfuzurrahman4044@gmail.com
+          </h2>
+        </div>
       </div>
     </div>
   );

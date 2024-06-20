@@ -1,16 +1,17 @@
 .project-img img {
   height: 200px;
-  border: 1px solid blue;
+  border: 1px solid green;
 }
 
 .modal-img img {
-  border: 1pt solid blue;
+  border: 1pt solid green;
+  height: 200px;
 }
 
 @media only screen and (max-width: 450px) {
   .project-img img {
     height: 120px;
     width: 200px;
-    border: 1px solid blue;
+    border: 1px solid green;
   }
 }

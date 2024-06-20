@@ -2,14 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Main from "./Main/Main";
+import Main from "./Layout/Layout";
 import About from "./About/About";
-import Home from "./Home/Home/Home";
+import Home from "./Home/Home";
 import Projects from "./Projects/Projects";
-import Resume from "./Resume/Resume";
 import Contact from "./Contact/Contact";
 import Skills from "./Skills/Skills";
-import Services from "./Home/Services/Services";
+import Education from "./Education/Education";
+import Services from "./Services/Services";
 
 const router = createBrowserRouter([
   {
@@ -21,24 +21,24 @@ const router = createBrowserRouter([
         element: <Home></Home>,
       },
       {
-        path: "/skills",
-        element: <Skills></Skills>,
-      },
-      {
         path: "/about",
         element: <About></About>,
       },
       {
-        path: "/projects",
-        element: <Projects></Projects>,
+        path: "/education",
+        element: <Education></Education>,
+      },
+      {
+        path: "/skills",
+        element: <Skills></Skills>,
       },
       {
         path: "/services",
         element: <Services></Services>,
       },
       {
-        path: "/resume",
-        element: <Resume></Resume>,
+        path: "/projects",
+        element: <Projects></Projects>,
       },
       {
         path: "/contact",

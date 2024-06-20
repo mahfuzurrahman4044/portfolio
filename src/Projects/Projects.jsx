@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
 import "./Projects.css";
-import img1 from "../assets/Projects/Summer Camp.png";
-import img2 from "../assets/Projects/Holizon Education Consultancy.png";
-import img3 from "../assets/Projects/Tea House.png";
+import img1 from "../assets/Projects/Bistro Boss Logo.png";
+import img2 from "../assets/Projects/Task Master Logo.jpg";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 import Aos from "aos";
@@ -14,19 +13,23 @@ const Projects = () => {
     Aos.init();
   }, []);
   return (
-    <div className="mt-20" id="projects">
+    <div className="py-16 bg-gray-950" id="projects">
       <SectionTitle title={"Projects"}></SectionTitle>
-      <div className="grid lg:grid-cols-3 lg:ps-7 lg:px-0 px-5">
-        <div data-aos="flip-left" data-aos-duration="2000" className="card lg:w-96 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-xl lg:my-0 my-5">
+      <div className="flex justify-around text-white font-serif lg:ps-7 lg:px-0 px-5">
+        <div
+          data-aos="flip-left"
+          data-aos-duration="2000"
+          className="card lg:w-96 bg-gradient-to-r from-green-400 to-cyan-300 shadow-xl lg:my-0 my-5"
+        >
           <figure className="px-10 pt-10 project-img">
             <img src={img1} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Summer Camp</h2>
+            <h2 className="card-title">Bistro Boss</h2>
             <div className="card-actions">
               {/* Open the modal using ID.showModal() method */}
               <button
-                className="btn btn-primary"
+                className="btn text-gradient"
                 onClick={() => window.my_modal_5.showModal()}
               >
                 Details
@@ -37,43 +40,41 @@ const Projects = () => {
               >
                 <form
                   method="dialog"
-                  className="modal-box bg-gradient-to-r from-blue-600 to-cyan-400"
+                  className="modal-box bg-gradient-to-r from-green-400 to-cyan-300 text-white"
                 >
                   <figure className="px-5 pt-5 modal-img">
                     <img src={img1} alt="Shoes" className="rounded-xl" />
                   </figure>
-                  <h3 className="font-bold text-lg mt-3">Summer Camp</h3>
+                  <h3 className="font-bold text-lg mt-3">Bistro Boss</h3>
                   <p className="py-4 text-left">
-                    Features
+                    <span className="underline">Features:</span>
                     <ul className="" style={{ listStyleType: "disc" }}>
                       <li className="ms-10">
-                        Admin, Instructor and Student have different dashboards.{" "}
+                        Separate dashboards for admin, seller, and buyer.{" "}
                       </li>
-                      <li className="ms-10">
-                        Implemented JWT for extra security.{" "}
-                      </li>
-                      <li className="ms-10">Implemented a payment method.</li>
+                      <li className="ms-10">JWT-protected API endpoints. </li>
+                      <li className="ms-10">Stripe payment integration.</li>
                     </ul>
-                    Technologies: React | Node | Express | MongoDB | JWT |
-                    Firebase | Tailwind
+                    <span className="underline">Technologies:</span> React |
+                    Node | Express | MongoDB | Firebase | JWT
                     <div className="mt-5 lg:flex justify-center items-center">
                       <div>
-                        <button className="btn btn-primary">
-                          <Link to="https://github.com/mahfuzurrahman4044/Summer-Camp">
+                        <button className="btn text-gradient">
+                          <Link to="https://github.com/mahfuzurrahman4044/bistro-boss">
                             GitHub Client Site
                           </Link>
                         </button>{" "}
                       </div>
                       <div>
-                        <button className="btn btn-primary my-3 lg:mx-3">
-                          <Link to="https://github.com/mahfuzurrahman4044/Summer-Camp-API">
+                        <button className="btn text-gradient my-3 lg:mx-3">
+                          <Link to="https://github.com/mahfuzurrahman4044/bistro-boss-server">
                             GitHub Server Site
                           </Link>
                         </button>{" "}
                       </div>
                       <div>
-                        <button className="btn btn-primary">
-                          <Link to="https://summer-camp-4dcb2.web.app/">
+                        <button className="btn text-gradient">
+                          <Link to="https://bistro-boss-mahfuzur-rahman.netlify.app/">
                             Live Site
                           </Link>
                         </button>
@@ -82,7 +83,7 @@ const Projects = () => {
                   </p>
                   <div className="modal-action">
                     {/* if there is a button in form, it will close the modal */}
-                    <button className="btn btn-primary">Close</button>
+                    <button className="btn text-gradient">Close</button>
                   </div>
                 </form>
               </dialog>
@@ -90,16 +91,20 @@ const Projects = () => {
           </div>
         </div>
 
-        <div data-aos="flip-left" data-aos-duration="2000" className="card lg:w-96 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-xl lg:my-0 my-5">
+        <div
+          data-aos="flip-left"
+          data-aos-duration="2000"
+          className="card lg:w-96 bg-gradient-to-r from-green-400 to-cyan-300 shadow-xl lg:my-0 my-5"
+        >
           <figure className="px-10 pt-10 project-img">
             <img src={img2} alt="Shoes" className="rounded-xl" />
           </figure>
           <div className="card-body items-center text-center">
-            <h2 className="card-title">Holizon Education Consultancy</h2>
+            <h2 className="card-title">Task Master</h2>
             <div className="card-actions">
               {/* Open the modal using ID.showModal() method */}
               <button
-                className="btn btn-primary"
+                className="btn text-gradient"
                 onClick={() => window.my_modal_6.showModal()}
               >
                 Details
@@ -110,49 +115,47 @@ const Projects = () => {
               >
                 <form
                   method="dialog"
-                  className="modal-box bg-gradient-to-r from-blue-600 to-cyan-400"
+                  className="modal-box bg-gradient-to-r from-green-400 to-cyan-300 text-white"
                 >
                   <figure className="px-5 pt-5 modal-img">
                     <img src={img2} alt="Shoes" className="rounded-xl" />
                   </figure>
-                  <h3 className="font-bold text-lg mt-3">
-                    Holizon Education Consultancy
-                  </h3>
+                  <h3 className="font-bold text-lg mt-3">Task Master</h3>
                   <p className="py-4 text-left">
-                    Features
+                    <span className="underline">Features:</span>
                     <ul className="" style={{ listStyleType: "disc" }}>
                       <li className="ms-10">
-                        Users can add classes and see the classes they have
-                        added.{" "}
+                        User account creation and private route protection for
+                        the main page.{" "}
                       </li>
                       <li className="ms-10">
-                        Used a private route for privacy.
+                        Task addition and status updates ("In Progress" or
+                        "Completed").
                       </li>
                       <li className="ms-10">
-                        Used AOS for awesome UI and made the homepage
-                        responsive.
+                        Task archiving and recovery from the archive.
                       </li>
                     </ul>
-                    Technologies: React | Node | Express | MongoDB | Firebase |
-                    Tailwind
+                    <span className="underline">Technologies:</span> React |
+                    Redux | Node | Express | MongoDB | Firebase
                     <div className="mt-5 lg:flex justify-center items-center">
                       <div>
-                        <button className="btn btn-primary">
-                          <Link to="https://github.com/mahfuzurrahman4044/college">
+                        <button className="btn text-gradient">
+                          <Link to="https://github.com/mahfuzurrahman4044/task-master">
                             GitHub Client Site
                           </Link>
                         </button>{" "}
                       </div>
                       <div>
-                        <button className="btn btn-primary my-3 lg:mx-3">
-                          <Link to="https://github.com/mahfuzurrahman4044/college-server">
+                        <button className="btn text-gradient my-3 lg:mx-3">
+                          <Link to="https://github.com/mahfuzurrahman4044/task-master-server">
                             GitHub Server Site
                           </Link>
                         </button>{" "}
                       </div>
                       <div>
-                        <button className="btn btn-primary">
-                          <Link to="https://college-bec54.web.app/">
+                        <button className="btn text-gradient">
+                          <Link to="https://task-master-mahfuzur-rahman.netlify.app/">
                             Live Site
                           </Link>
                         </button>
@@ -161,75 +164,7 @@ const Projects = () => {
                   </p>
                   <div className="modal-action">
                     {/* if there is a button in form, it will close the modal */}
-                    <button className="btn btn-primary">Close</button>
-                  </div>
-                </form>
-              </dialog>
-            </div>
-          </div>
-        </div>
-
-        <div data-aos="flip-left" data-aos-duration="2000" className="card lg:w-96 bg-gradient-to-r from-blue-600 to-cyan-400 shadow-xl lg:my-0 my-5">
-          <figure className="px-10 pt-10 project-img">
-            <img src={img3} alt="Shoes" className="rounded-xl" />
-          </figure>
-          <div className="card-body items-center text-center">
-            <h2 className="card-title">Tea House</h2>
-            <div className="card-actions">
-              {/* Open the modal using ID.showModal() method */}
-              <button
-                className="btn btn-primary"
-                onClick={() => window.my_modal_7.showModal()}
-              >
-                Details
-              </button>
-              <dialog
-                id="my_modal_7"
-                className="modal modal-bottom sm:modal-middle"
-              >
-                <form
-                  method="dialog"
-                  className="modal-box bg-gradient-to-r from-blue-600 to-cyan-400"
-                >
-                  <figure className="px-5 pt-5 modal-img">
-                    <img src={img3} alt="Shoes" className="rounded-xl" />
-                  </figure>
-                  <h3 className="font-bold text-lg mt-3">Tea House</h3>
-                  <p className="py-4 text-left">
-                    Features
-                    <ul className="" style={{ listStyleType: "disc" }}>
-                      <li className="ms-10">Beautiful design.</li>
-                      <li className="ms-10">Used Bootstrap.</li>
-                      <li className="ms-10">Responsive design.</li>
-                    </ul>
-                    Technologies: HTML | CSS | Bootstrap
-                    <div className="mt-5 lg:flex justify-center items-center">
-                      <div>
-                        <button className="btn btn-primary">
-                          <Link to="https://github.com/mahfuzurrahman4044/Tea-House">
-                            GitHub Client Site
-                          </Link>
-                        </button>
-                      </div>
-                      {/* <div>
-                        <button className="btn btn-primary my-3 lg:mx-3">
-                          <Link to="https://github.com/programming-hero-web-course-4/b7a10-chef-recipe-hunter-server-side-mahfuzurrahman4044">
-                            GitHub Server Site
-                          </Link>
-                        </button>
-                      </div> */}
-                      <div>
-                        <button className="btn btn-primary lg:mx-3">
-                          <Link to="https://kaleidoscopic-gnome-355bfd.netlify.app/">
-                            Live Site
-                          </Link>
-                        </button>
-                      </div>
-                    </div>
-                  </p>
-                  <div className="modal-action">
-                    {/* if there is a button in form, it will close the modal */}
-                    <button className="btn btn-primary">Close</button>
+                    <button className="btn text-gradient">Close</button>
                   </div>
                 </form>
               </dialog>
