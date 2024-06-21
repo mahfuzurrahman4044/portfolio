@@ -24,7 +24,7 @@ const About = () => {
       <div className="lg:flex justify-around items-center">
         <div className="about-img text-center lg:text-left" data-aos="fade-right" data-aos-duration="1500">
           <img src={image} alt="" />
-          <div className="pt-6 ps-12">
+          <div className="pt-6 lg:ps-10">
             <button className="btn text-gradient" onClick={handleDownload}>
               <FaCloudDownloadAlt className="text-white" /> Download Resume
             </button>

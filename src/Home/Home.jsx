@@ -19,7 +19,7 @@ const Home = () => {
       className="bg-gradient-to-r from-green-400 to-cyan-300 lg:pt-20 sm:pt-0"
       id="home"
     >
-      <div className="lg:py-36 py-24 lg:ps-16 ps-0 font-serif home-background text-center lg:text-left">
+      <div className="py-36 lg:ps-16 ps-0 font-serif home-background text-center lg:text-left">
         <h2 className="text-5xl text-white">Hello, I'm</h2>
         <h2 className="text-7xl text-white my-4">Mahfuzur Rahman</h2>
         <p className="text-white text-2xl">A passionate MERN Stack Developer</p>
