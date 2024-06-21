@@ -14,6 +14,8 @@ import skill11 from "../assets/Skills/MongoDB-Emblem.jpg";
 import skill12 from "../assets/Skills/firebase_logo.webp";
 import skill13 from "../assets/Skills/GitHub-Mark.png";
 import skill14 from "../assets/Skills/Agile Methodlogy Logo.jpg";
+import skill15 from "../assets/Skills/Jira Logo.png";
+import skill16 from "../assets/Skills/English Logo.png";
 
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -24,7 +26,7 @@ const Skills = () => {
     Aos.init();
   }, []);
   return (
-    <div className="bg-gray-950 py-16" id="skills">
+    <div className="bg-gray-950 lg:py-16 py-10" id="skills">
       <SectionTitle title={"Skills"}></SectionTitle>
       <div
         className="grid justify-center lg:grid-cols-4 gap-10 my-10 lg:ps-8 font-serif text-white"
@@ -33,7 +35,7 @@ const Skills = () => {
         <div
           className="card w-60 bg-gradient-to-r from-green-400 to-cyan-300 shadow-lg border border-1 border-gray-400"
           data-aos="flip-left"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
         >
           <div className="flex justify-center items-center gap-4">
             <div className="card-img">
@@ -239,6 +241,36 @@ const Skills = () => {
             <div className="">
               <h2 className="card-title">Agile Methodlogy</h2>
               <p>Basic</p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="card w-60 bg-gradient-to-r from-green-400 to-cyan-300 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
+          <div className="flex justify-center items-center gap-4">
+            <div className="card-img">
+              <img src={skill15} alt="" />
+            </div>
+            <div className="">
+              <h2 className="card-title">Jira</h2>
+              <p>Basic</p>
+            </div>
+          </div>
+        </div>
+        <div
+          className="card w-60 bg-gradient-to-r from-green-400 to-cyan-300 shadow-lg border border-1 border-gray-400"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
+          <div className="flex justify-center items-center gap-4">
+            <div className="card-img">
+              <img src={skill16} alt="" />
+            </div>
+            <div className="">
+              <h2 className="card-title">English</h2>
+              <p>Intermediate</p>
             </div>
           </div>
         </div>

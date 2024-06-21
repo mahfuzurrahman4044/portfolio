@@ -3,18 +3,26 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import image from "../assets/Photo/Photo.jpg";
 import { FaCloudDownloadAlt } from "react-icons/fa";
 
+import Aos from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 const About = () => {
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   const handleDownload = () => {
     window.open(
       "https://drive.google.com/file/d/1tYquE-fLFOJ_Ikrxvntpqd3cSwsb5-mq/view?usp=sharing"
     );
   };
   return (
-    <div className="py-16 bg-gray-950" id="about">
+    <div className="lg:py-16 py-10 bg-gray-950" id="about">
       <SectionTitle title={"About"}></SectionTitle>
 
-      <div className="flex justify-around items-center">
-        <div className="about-img">
+      <div className="lg:flex justify-around items-center">
+        <div className="about-img text-center lg:text-left" data-aos="fade-right" data-aos-duration="1500">
           <img src={image} alt="" />
           <div className="pt-6 ps-12">
             <button className="btn text-gradient" onClick={handleDownload}>
@@ -23,7 +31,7 @@ const About = () => {
           </div>
         </div>
 
-        <div className="w-1/2 text-white font-serif">
+        <div className="lg:w-1/2 text-white font-serif text-center lg:text-left mt-10 lg:mt-0" data-aos="fade-left" data-aos-duration="1500">
           <p>
             Motivated Web Developer with expertise in MERN Stack Development.
             Dedicated to delivering exceptional user experiences and eager to

@@ -13,12 +13,12 @@ const Projects = () => {
     Aos.init();
   }, []);
   return (
-    <div className="py-16 bg-gray-950" id="projects">
+    <div className="lg:py-16 py-10 bg-gray-950" id="projects">
       <SectionTitle title={"Projects"}></SectionTitle>
-      <div className="flex justify-around text-white font-serif lg:ps-7 lg:px-0 px-5">
+      <div className="lg:flex justify-around text-white font-serif lg:ps-7 lg:px-0 px-5">
         <div
           data-aos="flip-left"
-          data-aos-duration="2000"
+          data-aos-duration="1500"
           className="card lg:w-96 bg-gradient-to-r from-green-400 to-cyan-300 shadow-xl lg:my-0 my-5"
         >
           <figure className="px-10 pt-10 project-img">

@@ -1,32 +1,4 @@
-.home-img img {
-  border: 1px solid rgb(239, 37, 239);
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  width: 300px;
-  height: 350px;
-}
-
-.banner-text {
-  text-align: justify;
-}
-
-@media only screen and (max-width: 450px) {
-  .home-img img {
-    width: 180px;
-    height: 200px;
-  }
-  .hi {
-    /* font-size: xx-large; */
-    position: relative;
-    top: 20px;
-  }
-  .position {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    margin-top: 80px;
-    text-align: center;
-  }
-  .banner-text {
-    text-align: justify;
-  }
+.home-background {
+  background-image: url(../assets/Photo/Healthy-Tips-for-Working-on-Your-Laptop.jpg);
+  opacity: 50%;
 }

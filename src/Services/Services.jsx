@@ -16,7 +16,7 @@ const Services = () => {
     Aos.init();
   }, []);
   return (
-    <div className="py-16 bg-gray-900" id="services">
+    <div className="lg:py-16 py-10 bg-gray-900" id="services">
       <div className="lg:px-48 lg:mt-10">
         <SectionTitle title={"Services"}></SectionTitle>
       </div>

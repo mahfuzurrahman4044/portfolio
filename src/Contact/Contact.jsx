@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import SectionTitle from "../SectionTitle/SectionTitle";
 
 import Aos from "aos";
@@ -19,7 +18,7 @@ const Contact = () => {
     const message = form.message.value;
     // console.log({ userName, userEmail, subject, message });
 
-    fetch("https://portfolio-api-green.vercel.app/sendEmail", {
+    fetch("https://portfolio-server-mahfuzur-rahman.vercel.app/sendEmail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -38,7 +37,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="py-16 bg-gray-900" id="contact">
+    <div className="lg:py-16 py-10 bg-gray-900" id="contact">
       <SectionTitle title={"Contact"}></SectionTitle>
       <div data-aos="">
         <div className="hero min-h-screen">
@@ -58,6 +57,7 @@ const Contact = () => {
                     placeholder="name"
                     className="input input-bordered"
                     name="name"
+                    required
                   />
                 </div>
                 <div className="form-control">
@@ -69,6 +69,7 @@ const Contact = () => {
                     placeholder="email"
                     className="input input-bordered"
                     name="email"
+                    required
                   />
                 </div>
                 <div className="form-control">
@@ -90,6 +91,7 @@ const Contact = () => {
                     placeholder="message"
                     className="input input-bordered h-32"
                     name="message"
+                    required
                   ></textarea>
                 </div>
                 <div className="form-control mt-6">

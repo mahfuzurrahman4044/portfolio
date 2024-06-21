@@ -10,7 +10,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="lg:ps-16 navbar bg-gradient-to-r from-green-400 to-cyan-300 opacity-90 lg:fixed lg:top-0 w-full z-10 shadow-xl">
+    <div className="lg:ps-16 navbar bg-gradient-to-r from-green-400 to-cyan-300 lg:fixed lg:top-0 w-full z-10">
       <div className="navbar-start flex items-center space-x-4">
         <div className="dropdown lg:hidden">
           <label tabIndex={0} className="btn btn-ghost">
